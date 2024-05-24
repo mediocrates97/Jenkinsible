@@ -1,0 +1,6 @@
+localhost ansible_connection=local
+<public_ip_or_dns> ansible_user=ec2-user ansible_ssh_private_key_file=/path/to/your/key.pem
+
+
+<!-- Replace <public_ip_or_dns> with the public IP or DNS name of your EC2 instance, and /path/to/your/key.pem with the path to your SSH key pair file (the same one you used to connect to the EC2 instance).
+The ansible_connection=local tells Ansible to use the local connection for the localhost host, while the ansible_user and ansible_ssh_private_key_file variables specify the user and SSH key to use when connecting to the EC2 instance. -->
