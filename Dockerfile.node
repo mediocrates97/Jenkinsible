@@ -1,0 +1,3 @@
+# Dockerfile for Node.js
+FROM node:14.1
+RUN echo "Node $(node -v) - Zubair"
